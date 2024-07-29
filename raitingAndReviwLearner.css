@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #f7f7f7;
+}
+
+.rating {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #f8f6f6;
+}
+
+.stars {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #383636;
+}
+
+.par {
+  color: #fffafa;
+}
+
+.star {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.one {
+  color: rgb(255, 0, 0);
+}
+
+.two {
+  color: rgb(255, 106, 0);
+}
+
+.three {
+  color: rgb(251, 255, 120);
+}
+
+.four {
+  color: rgb(255, 255, 0);
+}
+
+.five {
+  color: rgb(255, 255, 37);
+}
+
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #2c2929;
+  border-radius: 4px;
+  color: #f5eeee;
+  background-color: #2c2929;
+}
+
+button {
+  background-color: #27c15d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b35f;
+}
+
+.reviews {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.review p {
+  margin: 0;
+}
+
+/*back button css*/
+div.backBtn {
+  width: 100px;
+  left: 15px;
+  top: 100px;
+  background-color: #f4f4f4;
+  transition: all 0.4s ease;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1000;
+  /* Increase the z-index value */
+
+}
+
+span.line {
+  bottom: auto;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  left: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+}
+
+span.tLine {
+  top: 0px;
+}
+
+span.mLine {
+  top: 13px;
+  opacity: 0;
+}
+
+span.bLine {
+  top: 26px;
+}
+
+.label {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  font-size: 1em;
+  color: white;
+}
+
+div.backBtn:hover span.label {
+  left: 25px
+}
+
+div.backBtn:hover span.line {
+  left: -10px;
+  height: 5px;
+  background-color: #F76060;
+}
+
+div.backBtn:hover span.tLine {
+  width: 25px;
+  transform: rotate(-45deg);
+  left: -15px;
+  top: 6px;
+}
+
+div.backBtn:hover span.mLine {
+  opacity: 1;
+  width: 30px;
+}
+
+div.backBtn:hover span.bLine {
+  width: 25px;
+  transform: rotate(45deg);
+  left: -15px;
+  top: 20px;
+}
